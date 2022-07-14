@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header estilos */
+
+.header {
+    width: 100%;
+    height: 70px;
+}
+
+.logo {
+    padding-top: 15px;
+}
+
+.navbar {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-container {
+    display: flex;
+    gap: 20px;
+}
+
+.item {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 25px;
+    line-height: 70px;
+}
+
+
+/* final header */
+
+/* main estilos */
+
+.main {
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 25px;
+}
+
+
+.card {
+    width: 25%;
+    text-align: center;
+    
+}
+
+.card-img {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.boton-carrito {
+    padding: 10px;
+    background-color: rgba(0, 0, 255, 0.747);
+    color: #fff;
+    border-radius: 5px;
+}
