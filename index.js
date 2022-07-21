@@ -33,11 +33,18 @@ function mostrarProductos(){
             <h5 class="card-title">${item.nombre}</h5>
             <p class="class-text">${item.precio}</p>
             <a href="#" id="producto${item.id}"class="boton-carrito">Agregar al Carrito</a>
-        </div>`;
+        </div>`;    
         contenedorProductos.appendChild(div);
+
+        
 
         let btnAgregar = document.getElementById(`producto${item.id}`);
         btnAgregar.addEventListener("click", () => {
+            Swal.fire({
+                title: 'Producto agregado al carrito',
+                icon: 'success',
+                confirmButtonText: 'Aceptar'
+              })
             agregarAlCarrito(item.id);
         });
         
